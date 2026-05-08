@@ -1,16 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.tiendaapp.dao;
 import com.mycompany.tiendaapp.model.*;
 import java.io.*;
 import java.util.ArrayList;
-
-/**
- *
- * @author Dell
- */
 public class DataStore {
     private static final String DIR            = "data/";
     private static final String PRODUCTOS_FILE = DIR + "productos.dat";
