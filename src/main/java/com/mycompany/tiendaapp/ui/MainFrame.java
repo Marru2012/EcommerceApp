@@ -4,8 +4,8 @@
  */
 package com.mycompany.tiendaapp.ui;
 
-import model.*;
-import service.AppContext;
+import com.mycompany.tiendaapp.model.*;
+import com.mycompany.tiendaapp.service.*;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
