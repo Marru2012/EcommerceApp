@@ -1,6 +1,7 @@
 package com.mycompany.tiendaapp.ui;
 
 import com.mycompany.tiendaapp.service.*;
+import com.mycompany.tiendaapp.model.*;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
