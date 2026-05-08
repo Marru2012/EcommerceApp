@@ -24,14 +24,26 @@ public abstract class Pago implements Serializable {
     public abstract boolean procesar() throws Exception;
 
     // Getters y Setters
-    public String getId()                  { return id; }
-    public void   setId(String id)         { this.id = id; }
+    public String getId(){ 
+        return id; 
+    }
+    public void setId(String id){ 
+        this.id = id; 
+    }
 
-    public double getMonto()               { return monto; }
-    public void   setMonto(double m)       { this.monto = m; }
+    public double getMonto(){ 
+        return monto; 
+    }
+    public void setMonto(double m){ 
+        this.monto = m; 
+    }
 
-    public String getFecha()               { return fecha; }
-    public void   setFecha(String f)       { this.fecha = f; }
+    public String getFecha(){ 
+        return fecha; 
+    }
+    public void   setFecha(String f){ 
+        this.fecha = f; 
+    }
 
     public boolean isProcesado()           { return procesado; }
     public void    setProcesado(boolean p) { this.procesado = p; }
