@@ -1,21 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.tiendaapp.ui;
 
-import model.*;
-import service.AppContext;
+import com.mycompany.tiendaapp.model.*;
+import com.mycompany.tiendaapp.service.AppContext;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
-/**
- *
- * @author Dell
- */
+
 public class MainFrame extends JFrame {
-    
+
     private AppContext ctx = AppContext.get();
     private Usuario usuario;
     private JTabbedPane tabs = new JTabbedPane();
@@ -32,13 +25,13 @@ public class MainFrame extends JFrame {
 
         // Pestanas segun rol
         if (usuario instanceof Administrador) {
-            tabs.addTab("📦 Productos",    new ProductosAdminPanel());
-            tabs.addTab("🛒 Pedidos",      new PedidosAdminPanel());
-            tabs.addTab("👤 Mi perfil",    new PerfilPanel(usuario));
+            tabs.addTab("📦 Productos", new ProductosAdminPanel());
+            tabs.addTab("🛒 Pedidos", new PedidosAdminPanel());
+            tabs.addTab("👤 Mi perfil", new PerfilPanel(usuario));
         } else {
-            tabs.addTab("🏪 Tienda",       new TiendaClientePanel((Cliente) usuario));
+            tabs.addTab("🏪 Tienda", new TiendaClientePanel((Cliente) usuario));
             tabs.addTab("🛍️ Mis pedidos", new MisPedidosPanel(usuario));
-            tabs.addTab("👤 Mi perfil",    new PerfilPanel(usuario));
+            tabs.addTab("👤 Mi perfil", new PerfilPanel(usuario));
         }
 
         tabs.setFont(new Font("Arial", Font.PLAIN, 13));
@@ -74,10 +67,8 @@ public class MainFrame extends JFrame {
         izq.add(titulo);
         izq.add(info);
 
-        h.add(izq,      BorderLayout.WEST);
+        h.add(izq, BorderLayout.WEST);
         h.add(btnSalir, BorderLayout.EAST);
         return h;
     }
 }
-
-
