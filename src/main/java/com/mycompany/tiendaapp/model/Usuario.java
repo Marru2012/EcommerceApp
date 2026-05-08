@@ -24,20 +24,40 @@ import java.io.Serializable;
     public abstract String obtenerDescripcionRol();
 
     // Getters y Setters - ENCAPSULACION
-    public String getId()                  { return id; }
-    public void   setId(String id)         { this.id = id; }
+    public String getId(){ 
+        return id; 
+    }
+    public void   setId(String id){ 
+        this.id = id; 
+    }
 
-    public String getNombre()              { return nombre; }
-    public void   setNombre(String n)      { this.nombre = n; }
+    public String getNombre(){ 
+        return nombre; 
+    }
+    public void   setNombre(String n){ 
+        this.nombre = n; 
+    }
 
-    public String getEmail()               { return email; }
-    public void   setEmail(String e)       { this.email = e; }
+    public String getEmail(){ 
+        return email; 
+    }
+    public void   setEmail(String e){ 
+        this.email = e; 
+    }
 
-    public String getPassword()            { return password; }
-    public void   setPassword(String p)    { this.password = p; }
+    public String getPassword(){ 
+        return password; 
+    }
+    public void   setPassword(String p){ 
+        this.password = p; 
+    }
 
-    public String getRol()                 { return rol; }
-    public void   setRol(String r)         { this.rol = r; }
+    public String getRol(){ 
+        return rol; 
+    }
+    public void   setRol(String r){ 
+        this.rol = r; 
+    }
 
     @Override
     public String toString() {
