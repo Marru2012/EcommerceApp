@@ -3,7 +3,7 @@ import com.mycompany.tiendaapp.model.*;
 import java.io.*;
 import java.util.ArrayList;
 public class DataStore {
-    private static final String DIR            = "data/";
+    private static final String DIR = "C:/Users/Dell/TechStoreData/";
     private static final String PRODUCTOS_FILE = DIR + "productos.dat";
     private static final String USUARIOS_FILE  = DIR + "usuarios.dat";
     private static final String PEDIDOS_FILE   = DIR + "pedidos.dat";
@@ -17,10 +17,13 @@ public class DataStore {
 
     private DataStore() {
         new File(DIR).mkdirs();
-        productos = cargarObjeto(PRODUCTOS_FILE, new ArrayList<>());
-        usuarios  = cargarObjeto(USUARIOS_FILE,  new ArrayList<>());
-        pedidos   = cargarObjeto(PEDIDOS_FILE,   new ArrayList<>());
-        if (usuarios.isEmpty()) inicializarDatos();
+    productos = cargarObjeto(PRODUCTOS_FILE, new ArrayList<>());
+    usuarios  = cargarObjeto(USUARIOS_FILE,  new ArrayList<>());
+    pedidos   = cargarObjeto(PEDIDOS_FILE,   new ArrayList<>());
+    System.out.println("DIR usada: " + DIR);
+    System.out.println("Productos cargados: " + productos.size());
+    System.out.println("Usuarios cargados: " + usuarios.size());
+    if (usuarios.isEmpty() || productos.isEmpty()) inicializarDatos();
     }
 
     public static DataStore getInstance() {
