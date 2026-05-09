@@ -19,11 +19,19 @@ public class itemCarrito implements Serializable {
         return producto.getPrecio() * cantidad;
     }
 
-    public Producto getProducto()          { return producto; }
-    public void     setProducto(Producto p){ this.producto = p; }
+    public Producto getProducto(){ 
+        return producto; 
+    }
+    public void setProducto(Producto p){ 
+        this.producto = p; 
+    }
 
-    public int  getCantidad()              { return cantidad; }
-    public void setCantidad(int c)         { this.cantidad = c; }
+    public int  getCantidad(){ 
+        return cantidad; 
+    }
+    public void setCantidad(int c){ 
+        this.cantidad = c; 
+    }
 
     @Override
     public String toString() {

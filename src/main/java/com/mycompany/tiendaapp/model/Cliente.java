@@ -28,12 +28,24 @@ public class Cliente extends Usuario {
     }
 
     // Getters y Setters
-    public String getDireccion()                              { return direccion; }
-    public void   setDireccion(String d)                      { this.direccion = d; }
+    public String getDireccion(){ 
+        return direccion; 
+    }
+    public void   setDireccion(String d){ 
+        this.direccion = d; 
+    }
 
-    public String getTelefono()                               { return telefono; }
-    public void   setTelefono(String t)                       { this.telefono = t; }
+    public String getTelefono() { 
+        return telefono; 
+    }
+    public void   setTelefono(String t){
+        this.telefono = t; 
+    }
 
-    public ArrayList<Pedido> getHistorialPedidos()            { return historialPedidos; }
-    public void setHistorialPedidos(ArrayList<Pedido> lista)  { this.historialPedidos = lista; }
+    public ArrayList<Pedido> getHistorialPedidos(){
+        return historialPedidos; 
+    }
+    public void setHistorialPedidos(ArrayList<Pedido> lista){ 
+        this.historialPedidos = lista; 
+    }
 }
