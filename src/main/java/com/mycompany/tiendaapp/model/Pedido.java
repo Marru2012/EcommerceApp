@@ -3,7 +3,7 @@ package com.mycompany.tiendaapp.model;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Pedido {
+public class Pedido implements Serializable{
     private static final long serialVersionUID = 1L;
 
     public enum Estado {

@@ -23,7 +23,7 @@ public class DataStore {
     System.out.println("DIR usada: " + DIR);
     System.out.println("Productos cargados: " + productos.size());
     System.out.println("Usuarios cargados: " + usuarios.size());
-    if (usuarios.isEmpty() || productos.isEmpty()) inicializarDatos();
+   if (usuarios.isEmpty()) inicializarDatos();
     }
 
     public static DataStore getInstance() {

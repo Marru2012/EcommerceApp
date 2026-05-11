@@ -2,7 +2,7 @@ package com.mycompany.tiendaapp.model;
 
 import java.io.Serializable;
 
-public class Producto {
+public class Producto implements Serializable{
     private static final long serialVersionUID = 1L;
 
     // ENCAPSULACION
