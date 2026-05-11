@@ -1,5 +1,5 @@
 package com.mycompany.tiendaapp.model;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Cliente extends Usuario {
